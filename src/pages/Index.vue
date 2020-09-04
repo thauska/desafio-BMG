@@ -1,7 +1,7 @@
 <template>
   <q-page class="row justify-center">
     <div class="row col-12 justify-center">
-      <img class="logo-ada" src="../../public/ADA2.png" width="100" height="100"/>
+      <img class="logo-ada" src="../../public/ADA2.png" height="100"/>
     </div>
     <div class="row col-12 justify-center">
       <div class="col-12 row justify-center">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="row col-12 justify-center container-logo-bmg">
-      <img src="../../public/banco-bmg-logo.png" width="60px" height="40px"/>
+      <img src="../../public/banco-bmg-logo.png" height="35px"/>
     </div>
   </q-page>
 </template>

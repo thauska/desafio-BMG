@@ -1,6 +1,12 @@
 <template>
-  <q-layout class="banner">
-    <img src="../../public/elipse.png" class="banner borda"/>
+  <q-layout view="hhh lpR fFf">
+    <q-header reveal bordered class="purplebg text-white">
+      <q-toolbar>
+        <q-toolbar-title>
+        </q-toolbar-title>
+      </q-toolbar>
+    </q-header>
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -17,12 +23,8 @@ export default {
 }
 </script>
 
-<style>
-.banner {
-  /* position: absolute; */
-  top: -2px;
-  width: 100vw;
-  height: 100px;
-  /* z-index: 1; */
+<style scoped>
+.purplebg {
+  background-color: rgba(70, 42, 113, 0.5);
 }
 </style>
