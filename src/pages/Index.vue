@@ -11,9 +11,6 @@
         <q-btn class="q-px-xl btn login" color="secondary" label="Entrar" no-caps dense @click="goLogin()"/>
       </div>
     </div>
-    <div class="row col-12 justify-center container-logo-bmg">
-      <img src="../../public/banco-bmg-logo.png" height="35px"/>
-    </div>
   </q-page>
 </template>
 
