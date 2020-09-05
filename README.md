@@ -1,4 +1,4 @@
-# Desafio BMG - MHW 2020 (desafio-bmg)
+# Banco Digital ADA - Desafio BMG - MHW 2020
 
 Solução criada para desafio BMG do MegaHack Women 2020 - Shawee
 
@@ -21,7 +21,7 @@ Instale as dependências via usando o [Yarn](https://yarnpkg.com/pt-BR/), atrav�
 yarn install
 ```
 
-Para rodar o aplicativo em ambiente de desenvolvimento é necessário ter o Quasar CLI e Cordova CLI, e executar o seguinte comando:
+Para rodar o aplicativo em ambiente de desenvolvimento é necessário ter o Quasar CLI, Cordova CLI e os SDKs necessários, e executar o seguinte comando:
 
 ```sh
 quasar dev -m cordova -T android
