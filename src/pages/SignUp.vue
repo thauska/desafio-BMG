@@ -1,12 +1,14 @@
 <template>
   <q-page class="row justify-center">
-    <div class="row justify-center col-12">
+    <div class="row justify-center col-12 q-mt-md q-mb-md">
       <span class="text-h6 text-secondary"> ABRA SUA CONTA </span>
     </div>
-    <sign-up-first ref="SignUpFirst"/>
-    <sign-up-second ref="SignUpSecond"/>
-    <div class="row col-8 borda justify-center q-pt-lg">
-      <q-btn :label="labelButton" color="secondary" dense class="q-px-lg btn" @click="next()"/>
+    <keep-alive>
+      <component :is="component"></component>
+    </keep-alive>
+    <div class="row col-9 justify-center q-pt-lg q-mb-lg">
+      <q-btn :label="labelBackButton" color="grey-8" outline dense class="col q-mr-xs" @click="previous()"/>
+      <q-btn :label="labelButton" color="secondary" dense class="col q-ml-xs" @click="next()"/>
     </div>
   </q-page>
 </template>
@@ -21,14 +23,21 @@ export default {
   },
   data () {
     return {
-      labelButton: 'Avançar'
+      labelButton: 'Avançar',
+      labelBackButton: 'Cancelar',
+      component: 'SignUpFirst'
     }
   },
   methods: {
     next () {
-      this.$refs.SignUpFirst.hideComponent()
-      this.$refs.SignUpSecond.showComponent()
+      this.component = 'SignUpSecond'
       this.labelButton = 'Criar conta'
+      this.labelBackButton = 'Voltar'
+    },
+    previous () {
+      this.component = 'SignUpFirst'
+      this.labelButton = 'Avançar'
+      this.labelBackButton = 'Cancelar'
     }
   }
 }

@@ -1,28 +1,32 @@
 <template>
-  <div class="row justify-center col-12" v-if="show">
-    <div class="row col-8 justify-center">
-      <span class="col-12 text-secondary"> Nome Completo </span>
-      <q-input dense dark bg-color="secondary" class="borda-arredondada col-12"/>
+  <div class="row justify-center col-12 q-gutter-y-xs">
+    <div class="row col-9 justify-center">
+      <span class="col-12 text-secondary text-weight-medium"> Nome Completo </span>
+      <q-input v-model="fullName" color="white" bg-color="secondary" class="full-width" dark filled dense />
     </div>
-    <div class="row col-8 justify-center">
-      <span class="col-12 text-secondary"> E-mail </span>
-      <q-input dense dark bg-color="secondary" class="borda-arredondada col-12"/>
+    <div class="row col-9 justify-center">
+      <span class="col-12 text-secondary text-weight-medium"> E-mail </span>
+       <q-input v-model="email" color="white" bg-color="secondary" class="full-width" dark filled dense />
     </div>
-    <div class="row col-8 justify-center">
-      <span class="col-12 text-secondary"> Senha </span>
-      <q-input dense dark bg-color="secondary" class="col-12"/>
+    <div class="row col-9 justify-center">
+      <span class="col-12 text-secondary text-weight-medium"> Senha </span>
+       <q-input v-model="password" color="white" bg-color="secondary" :type=" isPwd ? 'password' : 'text'" class="full-width" dark filled dense>
+        <template v-slot:append>
+          <q-icon
+            :name="isPwd ? 'visibility_off' : 'visibility'"
+            class="cursor-pointer"
+            @click="showPwd"
+          />
+        </template>
+       </q-input>
     </div>
-    <div class="row col-8 justify-center">
-      <span class="col-12 text-secondary"> Insira novamente sua senha </span>
-      <q-input dense dark bg-color="secondary" class="borda-arredondada col-12"/>
+    <div class="row col-9 justify-center">
+      <span class="col-12 text-secondary text-weight-medium"> CPF </span>
+       <q-input v-model="cpf" color="white" bg-color="secondary" class="full-width" dark filled dense />
     </div>
-    <div class="row col-8 justify-center">
-      <span class="col-12 text-secondary"> CPF </span>
-      <q-input dense dark bg-color="secondary" class="borda-arredondada col-12"/>
-    </div>
-    <div class="row col-8 justify-center">
-      <span class="col-12 text-secondary"> RG </span>
-      <q-input dense dark bg-color="secondary" class="borda-arredondada col-12"/>
+    <div class="row col-9 justify-center">
+      <span class="col-12 text-secondary text-weight-medium"> RG </span>
+       <q-input v-model="rg" color="white" bg-color="secondary" class="full-width" dark filled dense />
     </div>
   </div>
 </template>
@@ -31,15 +35,17 @@
 export default {
   data () {
     return {
-      show: true
+      isPwd: true,
+      password: '',
+      email: '',
+      fullName: '',
+      cpf: '',
+      rg: ''
     }
   },
   methods: {
-    showComponent () {
-      this.show = true
-    },
-    hideComponent () {
-      this.show = false
+    showPwd () {
+      this.isPwd = !this.isPwd
     }
   }
 }
