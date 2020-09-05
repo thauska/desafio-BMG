@@ -22,7 +22,7 @@ export default {
       this.$router.push('/login')
     },
     goSignUp () {
-      this.$router.push('/cadastrar')
+      this.$router.push('/cadastro')
     }
   }
 }
@@ -32,10 +32,6 @@ export default {
 /* .borda {
   border: 5px solid red;
 } */
-.logo-ada {
-  position: relative;
-  top: 24%;
-}
 .btn {
   height: 35px;
   padding: 0 20%;
