@@ -29,7 +29,6 @@
         <q-input dense dark bg-color="secondary" class="col-12"/>
       </div>
     </div>
-    <sign-up-second ref="SignUpSecond"/>
     <div class="row col-8 borda justify-center q-pt-lg">
       <q-btn label="avançar" color="secondary" dense class="q-px-lg btn" @click="next()"/>
     </div>
@@ -37,11 +36,7 @@
 </template>
 
 <script>
-import SignUpSecond from '../components/SignUpSecond'
 export default {
-  components: {
-    SignUpSecond
-  },
   data () {
     return {
       labelButton: 'Avançar'

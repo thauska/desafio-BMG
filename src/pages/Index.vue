@@ -22,7 +22,7 @@ export default {
       this.$router.push('/login')
     },
     goSignUp () {
-      this.$router.push('/cadastrar-primeira-etapa')
+      this.$router.push('/cadastro')
     }
   }
 }
