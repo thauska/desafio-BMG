@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512" class="hovered-paths"><g><g>
+	<g>
+		<g>
+			<path d="M255,348c-11.046,0-20,8.954-20,20v85c0,11.046,8.954,20,20,20s20-8.954,20-20v-85C275,356.954,266.046,348,255,348z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M20,120c11.046,0,20-8.954,20-20V40h60c11.046,0,20-8.954,20-20s-8.954-20-20-20H20C8.954,0,0,8.954,0,20v80     C0,111.046,8.954,120,20,120z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M101,348c-11.046,0-20,8.954-20,20v35c0,11.046,8.954,20,20,20s20-8.954,20-20v-35C121,356.954,112.046,348,101,348z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M100,472H40v-60c0-11.046-8.954-20-20-20s-20,8.954-20,20v80c0,11.046,8.954,20,20,20h80c11.046,0,20-8.954,20-20     C120,480.954,111.046,472,100,472z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M178,348c-11.046,0-20,8.954-20,20v35c0,11.046,8.954,20,20,20s20-8.954,20-20v-35C198,356.954,189.046,348,178,348z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M492,0h-80c-11.046,0-20,8.954-20,20s8.954,20,20,20h60v60c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V20     C512,8.954,503.046,0,492,0z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M335,348c-11.046,0-20,8.954-20,20v35c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20v-35     C355,356.954,346.046,348,335,348z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M492,278h-58V100c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v178h-39V100c0-11.046-8.954-20-20-20     c-11.046,0-20,8.954-20,20v178h-40V100c0-11.046-8.954-20-20-20s-20,8.954-20,20v178h-37V100c0-11.046-8.954-20-20-20     s-20,8.954-20,20v178h-37V100c0-11.046-8.954-20-20-20s-20,8.954-20,20v178H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20     h472c11.046,0,20-8.954,20-20C512,286.954,503.046,278,492,278z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M414,423c11.046,0,20-8.954,20-20v-35c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v35     C394,414.046,402.954,423,414,423z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+			<path d="M492,392c-11.046,0-20,8.954-20,20v60h-60c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h80c11.046,0,20-8.954,20-20     v-80C512,400.954,503.046,392,492,392z" data-original="#000000" class="hovered-path active-path" style="fill:#FFFFFF" data-old_color="#000000"/>
+		</g>
+	</g>
+</g></g> </svg>

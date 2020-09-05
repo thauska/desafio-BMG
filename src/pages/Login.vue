@@ -25,7 +25,7 @@
       <span class="text-secondary" @click="goRecoverPassword()"> Esqueci minha senha </span>
     </div>
     <div class="row col-12 justify-center">
-      <q-btn label="entrar" color="secondary" dense class="btn"/>
+      <q-btn label="entrar" color="secondary" dense class="btn" @click="login()"/>
     </div>
   </q-page>
 </template>
@@ -40,6 +40,9 @@ export default {
   methods: {
     goRecoverPassword () {
       this.$router.push('/recuperar-senha')
+    },
+    login () {
+      this.$router.push('/dashboard')
     }
   }
 }
