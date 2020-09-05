@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* .borda {
   border: 5px solid red;
 } */

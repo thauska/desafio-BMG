@@ -22,13 +22,10 @@
           />
         </template>
       </q-input>
-      <span class="text-secondary"> Esqueci minha senha </span>
+      <span class="text-secondary" @click="goRecoverPassword()"> Esqueci minha senha </span>
     </div>
     <div class="row col-12 justify-center">
       <q-btn label="entrar" color="secondary" dense class="btn"/>
-    </div>
-    <div class="row col-12 justify-center container-logo-bmg">
-      <img src="../../public/banco-bmg-logo.png" height="35px"/>
     </div>
   </q-page>
 </template>
@@ -39,11 +36,16 @@ export default {
     return {
       isPwd: true
     }
+  },
+  methods: {
+    goRecoverPassword () {
+      this.$router.push('/recuperar-senha')
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .btn {
   height: 35px;
   padding: 0 11%;

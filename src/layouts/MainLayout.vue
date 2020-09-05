@@ -8,7 +8,7 @@
       <router-view />
     </q-page-container>
     <q-footer class="text-center bg-transparent q-pa-sm">
-       <img src="../../public/banco-bmg-logo.png" height="30px"/>
+      <img src="../../public/banco-bmg-logo.png" height="30px"/>
     </q-footer>
   </q-layout>
 </template>

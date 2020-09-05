@@ -30,11 +30,13 @@ export default {
   },
   methods: {
     next () {
+      if (this.labelButton === 'Criar conta') this.$router.push('/')
       this.component = 'SignUpSecond'
       this.labelButton = 'Criar conta'
       this.labelBackButton = 'Voltar'
     },
     previous () {
+      if (this.labelBackButton === 'Cancelar') this.$router.push('/')
       this.component = 'SignUpFirst'
       this.labelButton = 'Avançar'
       this.labelBackButton = 'Cancelar'
