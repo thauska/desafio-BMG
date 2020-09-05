@@ -10,11 +10,29 @@
       </div>
       <div class="row col-9 justify-center q-my-xs">
         <span class="col-12 text-secondary text-weight-medium"> Nova Senha </span>
-        <q-input v-model="form.password" color="white" bg-color="secondary" class="full-width" dark filled dense />
+        <q-input v-model="form.password" color="white" bg-color="secondary" class="full-width" dark filled dense :type="isPwd ? 'password' : 'text'">
+          <template v-slot:append>
+            <q-icon
+              :name="isPwd ? 'visibility_off' : 'visibility'"
+              class="cursor-pointer"
+              color="white"
+              @click="isPwd = !isPwd"
+            />
+          </template>
+        </q-input>
       </div>
       <div class="row col-9 justify-center q-my-xs">
         <span class="col-12 text-secondary text-weight-medium"> Confirmar Nova Senha </span>
-        <q-input v-model="form.passwordCheck" color="white" bg-color="secondary" class="full-width" dark filled dense />
+        <q-input v-model="form.passwordCheck" color="white" bg-color="secondary" class="full-width" dark filled dense>
+          <template v-slot:append>
+            <q-icon
+              :name="isPwd ? 'visibility_off' : 'visibility'"
+              class="cursor-pointer"
+              color="white"
+              @click="isPwd = !isPwd"
+            />
+          </template>
+        </q-input>
       </div>
       <div class="row col-9 justify-center">
         <q-btn color="secondary" class="btn" label="enviar"/>
@@ -27,6 +45,7 @@
 export default {
   data () {
     return {
+      isPwd: true,
       form: {
         email: '',
         password: '',
