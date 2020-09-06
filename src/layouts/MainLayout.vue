@@ -2,6 +2,9 @@
   <q-layout view="hhh lpR fff">
     <q-header reveal bordered class="purplebg text-white">
       <q-toolbar>
+         <q-btn dense flat round icon="keyboard_arrow_left" @click="goBack()"  />
+         <q-toolbar-title></q-toolbar-title>
+         <q-btn dense flat round icon="home" @click="goHome()"  />
       </q-toolbar>
     </q-header>
     <q-page-container>
@@ -18,6 +21,16 @@ export default {
   name: 'MainLayout',
   data () {
     return {
+    }
+  },
+  methods: {
+    goBack () {
+      if (this.$router.path !== '/') {
+        this.$router.go(-1)
+      }
+    },
+    goHome () {
+      this.$router.push('/dashboard')
     }
   }
 }

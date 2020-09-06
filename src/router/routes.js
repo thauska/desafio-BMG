@@ -8,7 +8,8 @@ const routes = [
       { path: 'cadastro', component: () => import('pages/SignUp.vue') },
       { path: 'login', component: () => import('pages/Login.vue') },
       { path: 'recuperar-senha', component: () => import('pages/RecoverPassword.vue') },
-      { path: 'dashboard', component: () => import('pages/Dashboard.vue') }
+      { path: 'dashboard', component: () => import('pages/Dashboard.vue') },
+      { path: 'clube-ada', component: () => import('pages/AdaClub.vue') }
     ]
   },
 

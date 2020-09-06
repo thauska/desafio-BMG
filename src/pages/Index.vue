@@ -5,10 +5,10 @@
     </div>
     <div class="row col-12 justify-center">
       <div class="col-12 row justify-center">
-        <q-btn class="q-px-md btn" color="secondary" label="Seja uma cliente" no-caps outline dense @click="goSignUp()"/>
+        <q-btn class="q-px-xl btn login" color="secondary" label="Entrar" no-caps dense @click="goLogin()"/>
       </div>
       <div class="col-12 row justify-center">
-        <q-btn class="q-px-xl btn login" color="secondary" label="Entrar" no-caps dense @click="goLogin()"/>
+        <q-btn class="q-px-md btn" color="secondary" label="Seja uma cliente" no-caps outline dense @click="goSignUp()"/>
       </div>
     </div>
   </q-page>

@@ -4,11 +4,13 @@
       <img class="logo-ada" src="../../public/ADA2.png" height="100"/>
     </div>
     <div class="row align-data">
-      <div class="row col-12">
-        <div class="text-secondary text-body1 text-weight-bold"> Oi, Fulaninha </div>
+      <div class="row q-pt-sm justify-center">
+      <div class="row col-11">
+        <span> Olá, Maria</span>
       </div>
+    </div>
       <div class="row col-12">
-        <span class="text-secondary text-body1 text-weight-bold"> Conta: 111111-1 </span>
+        <span class="text-secondary text-body1 text-weight-bold"> Conta: 846486877-0 </span>
       </div>
     </div>
     <div class="row col-8 justify-center">

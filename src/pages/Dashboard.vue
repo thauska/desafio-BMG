@@ -1,11 +1,8 @@
 <template>
   <q-page class="container">
-    <div class="row q-pt-sm justify-center">
+    <div class="row q-pt-md justify-center">
       <div class="row col-11">
-        <span> Olá, </span>
-      </div>
-      <div class="row col-11">
-        <span> Maria </span>
+        <span> Olá, Maria </span>
       </div>
     </div>
     <div class="row q-pt-lg justify-center">
@@ -27,7 +24,7 @@
         </q-card-section>
       </q-card>
     </div>
-    <div class="row q-pt-sm q-gutter-xs no-wrap justify-center">
+    <div class="row q-pt-lg q-gutter-xs no-wrap justify-center">
       <q-card class="card bg-secondary">
         <q-card-section class="row justify-center">
           <img class="q-mb-sm" src="../../public/scan-barcode.svg" height="30"/>
@@ -60,19 +57,24 @@
 export default {
   data () {
     return {
-      actionsCard: [
-        {
-          label: 'Pagar conta',
-          icon: 'svg://192.168.0.9:8080/assets/scan-barcode.svg'
-        },
-        {
-          label: 'Transferir dinheiro',
-          icon: 'svg://192.168.0.9:8080/assets/icone-transacao.svg'
-        }
-      ]
+      actionsCard: []
     }
   }
 }
+</script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "043cdc85-9cb6-4348-afe8-49dcd567aeac", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "d723d7dd-5e60-457a-a10f-6fa5d1fb919e", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
 </script>
 
 <style>
@@ -81,5 +83,9 @@ export default {
 }
 .card {
   width: 23%;
+}
+
+#WACContainer.WACContainer .WACLauncher__ButtonContainer {
+  margin-bottom: 1rem;
 }
 </style>
