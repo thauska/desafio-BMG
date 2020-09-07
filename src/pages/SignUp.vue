@@ -7,7 +7,7 @@
       <component :is="component"></component>
     </keep-alive>
     <div class="row col-9 justify-center q-pt-lg q-mb-lg">
-      <q-btn :label="labelBackButton" color="grey-8" outline dense class="col q-mr-xs" @click="previous()"/>
+      <q-btn label="Voltar" color="grey-8" outline dense class="col q-mr-xs" @click="previous()" v-if="component === 'SignUpSecond'"/>
       <q-btn :label="labelButton" color="secondary" dense class="col q-ml-xs" @click="next()"/>
     </div>
   </q-page>
@@ -24,22 +24,18 @@ export default {
   data () {
     return {
       labelButton: 'Avançar',
-      labelBackButton: 'Cancelar',
       component: 'SignUpFirst'
     }
   },
   methods: {
     next () {
-      if (this.labelButton === 'Criar conta') this.$router.push('/')
+      if (this.labelButton === 'Criar conta') this.$router.push('/login')
       this.component = 'SignUpSecond'
       this.labelButton = 'Criar conta'
-      this.labelBackButton = 'Voltar'
     },
     previous () {
-      if (this.labelBackButton === 'Cancelar') this.$router.push('/')
       this.component = 'SignUpFirst'
       this.labelButton = 'Avançar'
-      this.labelBackButton = 'Cancelar'
     }
   }
 }

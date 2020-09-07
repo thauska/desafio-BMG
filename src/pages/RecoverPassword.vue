@@ -1,7 +1,7 @@
 <template>
   <q-page class="container">
-    <div class="row justify-center col-12 q-pt-xs q-mb-md">
-      <span class="text-h6 text-secondary"> RECUPERAR SENHA </span>
+    <div class="row justify-center col-12 q-pt-xs">
+      <span class="text-h6 text-secondary q-mt-lg"> RECUPERAR SENHA </span>
     </div>
     <div class="row q-pt-xl justify-center">
       <div class="row col-9 justify-center q-my-xs">
@@ -35,7 +35,7 @@
         </q-input>
       </div>
       <div class="row col-9 justify-center">
-        <q-btn color="secondary" class="btn" label="enviar"/>
+        <q-btn @click="sendEmail" color="secondary" unelevated class="btn full-width" :loading="isSendingEmail" label="enviar"/>
       </div>
     </div>
   </q-page>
@@ -50,7 +50,17 @@ export default {
         email: '',
         password: '',
         passwordCheck: ''
-      }
+      },
+      isSendingEmail: false
+    }
+  },
+  methods: {
+    sendEmail () {
+      this.isSendingEmail = true
+      setTimeout(() => {
+        this.isSendingEmail = false
+        this.$router.push('/login')
+      }, 5000)
     }
   }
 }

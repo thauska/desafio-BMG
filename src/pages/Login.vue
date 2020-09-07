@@ -1,20 +1,17 @@
 <template>
-  <q-page class="container">
-    <div class="row justify-center">
-      <img class="logo-ada" src="../../public/ADA2.png" height="100"/>
+  <q-page class="container q-pt-lg">
+    <div class="row justify-center q-mt-md">
+      <img src="../../public/ADA-logo.png" width="150"/>
     </div>
-    <div class="row align-data">
-      <div class="row q-pt-sm justify-center">
-      <div class="row col-11">
+    <div class="row justify-center q-mt-md">
+      <div class="col-9">
         <span> Olá, Maria</span>
       </div>
-    </div>
-      <div class="row col-12">
+      <div class="col-9">
         <span class="text-secondary text-body1 text-weight-bold"> Conta: 846486877-0 </span>
       </div>
-    </div>
-    <div class="row col-8 justify-center">
-      <q-input dark filled dense bg-color="secondary" :type="isPwd ? 'password' : 'text'">
+    <div class="col-9 text-center q-mt-md">
+      <q-input label="Informe a sua senha" color="secondary" dark filled dense bg-color="secondary" :type="isPwd ? 'password' : 'text'">
         <template v-slot:append>
           <q-icon
             :name="isPwd ? 'visibility_off' : 'visibility'"
@@ -24,10 +21,13 @@
           />
         </template>
       </q-input>
+    </div>
+    <div class="col-9 text-center q-mt-sm">
       <span class="text-secondary" @click="goRecoverPassword()"> Esqueci minha senha </span>
     </div>
-    <div class="row col-12 justify-center">
-      <q-btn label="entrar" color="secondary" dense class="btn" @click="login()"/>
+    <div class="col-9 justify-center q-mt-md">
+      <q-btn label="Entrar" color="secondary" class="full-width" dense :to="'/dashboard'"/>
+    </div>
     </div>
   </q-page>
 </template>

@@ -2,16 +2,16 @@
   <q-layout view="hhh lpR fff">
     <q-header reveal bordered class="purplebg text-white">
       <q-toolbar>
-         <q-btn dense flat round icon="keyboard_arrow_left" @click="goBack()"  />
+         <q-btn dense flat round icon="keyboard_arrow_left" @click="goBack()" v-show="canBack"/>
          <q-toolbar-title></q-toolbar-title>
-         <q-btn dense flat round icon="home" @click="goHome()"  />
+         <q-btn dense flat round icon="exit_to_app" :to="'/'" v-show="logout"/>
       </q-toolbar>
     </q-header>
     <q-page-container>
       <router-view />
     </q-page-container>
     <q-footer class="text-center bg-transparent q-pa-sm">
-      <img src="../../public/banco-bmg-logo.png" height="30px"/>
+      <img src="../../public/banco-bmg-logo.png" class="q-pt-sm" width="60px"/>
     </q-footer>
   </q-layout>
 </template>
@@ -23,14 +23,17 @@ export default {
     return {
     }
   },
+  computed: {
+    canBack () {
+      return this.$route.meta.canBack
+    },
+    logout () {
+      return this.$route.meta.logout
+    }
+  },
   methods: {
     goBack () {
-      if (this.$router.path !== '/') {
-        this.$router.go(-1)
-      }
-    },
-    goHome () {
-      this.$router.push('/dashboard')
+      this.$router.go(-1)
     }
   }
 }

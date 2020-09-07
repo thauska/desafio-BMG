@@ -1,15 +1,15 @@
 <template>
   <q-page class="row justify-center">
-    <div class="row col-12 justify-center">
-      <img class="logo-ada" src="../../public/ADA2.png" height="100"/>
+    <div class="col-12 text-center q-mt-xl q-pt-lg">
+      <img src="../../public/ADA-logo.png" width="150"/>
     </div>
-    <div class="row col-12 justify-center">
-      <div class="col-12 row justify-center">
-        <q-btn class="q-px-xl btn login" color="secondary" label="Entrar" no-caps dense @click="goLogin()"/>
-      </div>
-      <div class="col-12 row justify-center">
-        <q-btn class="q-px-md btn" color="secondary" label="Seja uma cliente" no-caps outline dense @click="goSignUp()"/>
-      </div>
+    <div class="col-9">
+    <div>
+        <q-btn class="full-width" unelevated color="secondary" label="Entrar" @click="goLogin()"/>
+    </div>
+    <div class="q-mt-md">
+        <q-btn class="full-width" color="secondary" label="Seja uma cliente" outline @click="goSignUp()"/>
+    </div>
     </div>
   </q-page>
 </template>

@@ -4,12 +4,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
-      { path: 'cadastro', component: () => import('pages/SignUp.vue') },
-      { path: 'login', component: () => import('pages/Login.vue') },
-      { path: 'recuperar-senha', component: () => import('pages/RecoverPassword.vue') },
-      { path: 'dashboard', component: () => import('pages/Dashboard.vue') },
-      { path: 'clube-ada', component: () => import('pages/AdaClub.vue') }
+      { path: '', component: () => import('pages/Index.vue'), meta: { canBack: false, logout: false } },
+      { path: 'cadastro', component: () => import('pages/SignUp.vue'), meta: { canBack: true, logout: false } },
+      { path: 'login', component: () => import('pages/Login.vue'), meta: { canBack: false, logout: true } },
+      { path: 'recuperar-senha', component: () => import('pages/RecoverPassword.vue'), meta: { canBack: true, logout: false } },
+      { path: 'dashboard', component: () => import('pages/Dashboard.vue'), meta: { canBack: false, logout: true } },
+      { path: 'clube-ada', component: () => import('pages/AdaClub.vue'), meta: { canBack: true, logout: false } },
+      { path: 'ofertas', component: () => import('pages/Offer.vue'), meta: { canBack: true, logout: false } }
     ]
   },
 
